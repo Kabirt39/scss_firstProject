@@ -1,0 +1,191 @@
+@import "variable.scss";
+@import "mixin";
+@import "extend";
+@import "mediaq";
+
+body{
+  margin: 0;
+}
+.header-area {
+  //background-color: $bg-red;
+}
+
+.app{}
+.font_family{
+  font-family: $font-family;
+}
+
+$font_colo: green;
+
+.similar-width{
+  max-width: 1200px;
+  margin: auto;
+
+  .container_border{
+    clear: both;
+  }
+}
+
+.header-area {
+  position: relative;
+  max-width: 1600px;
+  margin: 0px auto;
+
+  img {
+    width: 100%;
+    max-height: 700px;
+  }
+
+  h1 {
+    position: absolute;
+    left: 34px;
+    bottom: 10px;
+    letter-spacing: $letter-spacing;
+  }
+}
+
+.about-catering {
+  clear: both;
+  padding-top: 70px;
+  .box {
+    float: left;
+    width: 50%;
+  }
+  .about-catering-left {
+    img {
+      width: 100%;
+      max-height: 650px;
+    }
+  }
+
+  .about-catering-right {
+    h1{
+      text-align: center;
+      letter-spacing: $letter-spacing;
+      margin-bottom: 65px;
+    }
+    h5{
+      text-align: center;
+      letter-spacing: $letter-spacing;
+      font-size: 18px;
+    }
+    p{
+      font-size: 18px;
+      padding-left: 50px;
+      line-height: 28px;
+      span{
+        color: #000!important;
+        background-color: #f1f1f1!important;
+        padding: 4px 9px;
+      }
+    }
+    h6{
+      padding-left: 50px;
+      color: #757575;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+    }
+  }
+}
+
+//Our_menu ==================
+
+.our_menu{
+  clear: both;
+
+  .box2 {
+    float: left;
+    width: 50%;
+  }
+  hr{
+    margin: 95px 0px;
+    border-top: 1px solid #eee;
+  }
+  .our_menu-left{
+    h1{
+      text-align: center;
+      letter-spacing: $letter-spacing;
+      margin-bottom: 65px;
+    }
+    h3{
+      letter-spacing: $letter-spacing;
+      font-weight: 400;
+      margin: 10px 0;
+    }
+    p{
+      color: #757575;
+      margin-bottom: 60px;
+    }
+  }
+  .about-catering-left{
+    img{
+      width: 100%;
+      max-height: 650px;
+    }
+  }
+}
+
+//contact-area style================
+.contact-area{
+  @extend .similar-width;
+  h1{
+    font-size: 36px;
+    margin-top: 110px;
+    margin-bottom: 55px;
+    font-width: 400;
+  }
+  p{
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+  }
+  h3{
+    color: #607d8b;
+    margin-bottom: 25px;
+  }
+  form{
+    overflow: hidden;
+    input{
+      padding: 8px;
+      display: block;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      width: 99%;
+      height: 40px;
+      margin-bottom: 15px;
+
+    }
+    button{
+      display: inline-block;
+      padding: 10px 16px;
+      color: #000;
+      background-color: #f1f1f1;
+      border: none;
+      margin-bottom: 50px;
+      margin-top: 10px;
+      text-align: center;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+  }
+}
+footer{
+  background: #f1f1f1;
+  text-align: center;
+  p{
+    margin: 0;
+    padding: 50px 0px;
+    a{
+      display: inline-block;
+      color: #000000;
+    }
+    a:hover{
+      color: #4CAF50;
+    }
+  }
+}
+
+
+
+
+

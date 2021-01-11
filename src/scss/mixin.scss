@@ -1,0 +1,21 @@
+@mixin mixin_style($size, $height, $color, $radius){
+  width: $size;
+  height: $height;
+  background: $color;
+  border-radius: $radius;
+}
+
+.mixin-area{
+  display: block;
+  @include mixin_style(500px, 600px, red, 50%);
+  z-index: 1;
+  .mixin1{
+    @include mixin_style(100px, 400px, green, 10%);
+    margin-top: 150px;
+    display: block;
+    z-index: 2;
+    .mixin2{
+
+    }
+  }
+}

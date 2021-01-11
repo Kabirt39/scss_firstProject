@@ -1,0 +1,58 @@
+
+$lg-device: 1250px;
+$md-device: 991px;
+$sm-device: 767px;
+
+
+
+@media (max-width: $lg-device){
+  $margin_lf: 0px 15px;
+  $padding_lf: 0px 15px;
+  $padding_r: 15px;
+  .contact-area{
+
+    h1{margin: $margin_lf;}
+    h3{margin: $margin_lf;}
+    p{margin: $margin_lf;}
+
+    form{
+      margin: $margin_lf;
+      input{
+
+      }
+    }
+  }
+
+  .our_menu{
+    .our_menu-left{
+      h3{padding: $padding_lf;}
+      h1{padding: $padding_lf;}
+      p{padding: $padding_lf;}
+    }
+  }
+  .about-catering{
+    .about-catering-right{
+      h1{padding-right: $padding_r;}
+      p{padding-right: $padding_r;}
+    }
+  }
+
+}
+
+
+@media (max-width: $md-device){
+  .about-catering{
+    .box{
+      width: 100% !important;
+      float: none;
+    }
+    img{}
+    h1{}
+  }
+  .our_menu{
+    .box2{
+      width: 100% !important;
+      float: none;
+    }
+  }
+}
